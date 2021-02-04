@@ -25,20 +25,23 @@ public class LineComparision {
 		}
 		
 	}
-		
-	void equallength() { 
+	void CompareTo() { 
 		Double line1=a[0];
 		Double line2= a[1];
-		if (line1.equals(line2)==true) {
-			System.out.println("lines have equal length");
-			}else
-			System.out.println("Lines do not have equal length");	
+		if(line1>line2) {
+			System.out.println("line1 greater than line2");
+		}
+		else if(line1<line2) {
+			System.out.println("line1 less than line2");
+			}
+		else
+			System.out.println("Lines do not have equal length");
 	}	
 	public static void main(String[] args) {
 		System.out.println("Welcome to Line Comparison Computation Program Using Oops Concepts");
 		LineComparision line= new LineComparision();
 			line.findlength();
-			line.equallength();
+			line.CompareTo();
 		
 			
 	}
